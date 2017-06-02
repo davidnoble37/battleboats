@@ -17,14 +17,47 @@ Button
   - in lf box, have two labeled name input boxes
   - have button say 'submit'
 
-// Instruct Player to Shield Screen
+// Instruct Player 1 to Shield Screen
 - On comm bar, instruct players to pass laptop to Player 1 and shield screen
-- Give more detailed instructions to player to
+- Give more detailed instructions to player on lf screen
 - have button say 'ready to place boats'
 
-// When 
-**Make sure Player 2 can't see screen** Place Pieces and
+// Player One Places Boats
+When button is pressed
+- On comm bar, instruct player to place 2 piece boat
+- On lf bar, detailed instructions (can't be diagonal)
+- Player clicks the two adjacent cells to place (if clicks again, boat goes away
+from cell)
+- Play hits submit when done
+- Validate that boat is correctly placed before moving on to next cell (must be
+adjacent and can't overlap previous boat)
 
+// Pass Computer to Player 2
+- Instruct Player 1 to Pass Computer to Player 2 and Shield Screen
+
+// Player Two Places Boats
+- Repeat same sequence as before
+
+// Start Game Play
+- Randomly decide which player goes first
+- Announce that they go first on comm bar
+- instruct them to pass to that player
+- player must click button to start move
+
+// Gameplay sequence
+- Give placement instructions to player on lf bar
+- player selects square
+- button says strike
+- when player presses button, announce hit or miss
+- log in player's gameplay array
+- if strike, adjust strike count on scoreboard
+- check for whole boat and reflect on scoreboard
+- check for win and forward to win sequence if won
+- remove event listener guessed board
+- instruct player to pass to other player
+- other player must click button to start move
+
+// Start
 
 - Player 1 privately places pieces and submits when finished
 - Player 2 privately places pieces and submits when finished
