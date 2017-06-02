@@ -5,14 +5,11 @@ Score Box
 LF Box
 Button
 
-// Set-up
 
-
-// Start-up State
+// Initial State
 - Welcome message on comm bar and instruct players to press start to begin
 - Display instructions in LF Box
 - Button says 'start'
-
 
 // Input Names
 - When start button pressed
@@ -20,9 +17,13 @@ Button
   - in lf box, have two labeled name input boxes
   - have button say 'submit'
 
-// Place Pieces
--
+// Instruct Player to Shield Screen
+- On comm bar, instruct players to pass laptop to Player 1 and shield screen
+- Give more detailed instructions to player to
+- have button say 'ready to place boats'
 
+// When 
+**Make sure Player 2 can't see screen** Place Pieces and
 
 
 - Player 1 privately places pieces and submits when finished
