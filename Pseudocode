@@ -1,0 +1,41 @@
+Visual Elements:
+Board
+Comm Bar
+Score Box
+LF Box
+Button
+
+// Set-up
+
+
+// Start-up State
+- Welcome message on comm bar and instruct players to press start to begin
+- Display instructions in LF Box
+- Button says 'start'
+
+
+// Input Names
+- When start button pressed
+  - on comm bar, prompt players to enter names and hit submit
+  - in lf box, have two labeled name input boxes
+  - have button say 'submit'
+
+// Place Pieces
+-
+
+
+
+- Player 1 privately places pieces and submits when finished
+- Player 2 privately places pieces and submits when finished
+
+Gameplay
+- Player 1 is presented with a blank grid and clicks on a grid square to guess
+  opponent's boat location
+  - if hits a boat then color is red, otherwise color is green
+- Player 2 has same experience on his own grid
+- If all squares with a boat are selected - boat sink graphic appears
+
+Winning
+- If all boats sunk - player wins
+- Win graphics appear and player's name on scoreboard is highlighted
+- After a delay, players are offered the chance to play another game

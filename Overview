@@ -1,0 +1,55 @@
+Description of Gameplay Environment
+- Logo on top
+- Skinny notification bar immediately below
+- 8x8 game board with letters (A-H) on top and numbers (1-8) along side
+- Score box alongside that presents player name, indicates turn, boats sinked,
+and hit count
+- Graphics box to celebrate hits, sinking, and winning and general longer form
+communication with user to avoid use of alerts
+- At bottom of graphics box is a generic button that is used for start, next game,
+and submit functions
+- Each player places 3 boats - 1 two square, 1 three square, and 1 four square
+
+
+Basic Flow of Gameplay
+- Alternate turns guessing coordinates of boats
+- Guesses are marked on player's board with success / fail logic
+- Player who sinks all of opponents boats first wins
+
+
+Phases of Game
+- Set-up
+  - Instructions presented
+  - Player 1 and Player 2 enter their names
+  - Player 1 privately places pieces and submits when finished
+  - Player 2 privately places pieces and submits when finished
+
+- Gameplay
+  - Player 1 is presented with a blank grid and clicks on a grid square to guess
+  opponent's boat location
+    - if hits a boat then color is red, otherwise color is green
+  - Player 2 has same experience on his own grid
+  - If all squares with a boat are selected - boat sink graphic appears
+
+- Winning
+  - If all boats sunk - player wins
+  - Win graphics appear and player's name on scoreboard is highlighted
+  - After a delay, players are offered the chance to play another game
+
+
+Basic Game Architecture
+- Each players' initial board will populate an array that stores the boat locations
+- Boat cells will be marked with length of boat to help with input validation
+and to determine if individual boat is sunk
+- When a player takes a turn, the other player's inputed array is referenced to
+determine hit or miss. This is then marked in the game board and that cell is no
+longer clickable
+- When total number of successful hits equals total area of boats (9 hits), player
+is declared the winner
+
+
+Tips to utilize
+next()
+sibling()
+include
+vertical and horizontal objects with arrays
