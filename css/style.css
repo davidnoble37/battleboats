@@ -1,0 +1,104 @@
+body{
+  display: inline-block;
+}
+
+div{
+  border: 1px solid black;
+}
+
+header{
+  margin: 20px;
+  font-size: 30px;
+}
+
+.container{
+  height: 550px;
+  width: 825px;
+  margin: 20px;
+}
+
+
+.sfComm{
+  background: lightgreen;
+  height: 30px;
+  width: 825px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.gameBoard{
+height: 500px;
+width: 500px;
+float: left;
+margin-top: 20px;
+}
+
+.gridWrapper{
+  height: 450px;
+  width: 480px;
+  float: right;
+  margin-top: 30px;
+}
+
+.gridSquare{
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  width: 50px;
+  margin: 0px 0px 2px 2px;
+
+}
+
+.scoreBox{
+  float: right;
+  width: 300px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.turn{
+  height: 20px;
+  width: 40px;
+  display: inline-block;
+}
+
+.name{
+  height: 20px;
+  width: 100px;
+  display: inline-block;
+}
+
+.hits{
+  height: 20px;
+  width: 60px;
+  display: inline-block;
+  text-align: center;
+}
+
+.boats{
+  height: 20px;
+  width: 60px;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.lfComm{
+  float: right;
+  width: 300px;
+  height: 350px;
+  margin-top: 30px;
+}
+
+.lfText{
+  width: 300px;
+  height: 300px;
+}
+
+.lfButton{
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
