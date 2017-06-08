@@ -47,7 +47,12 @@ margin-top: 20px;
   height: 50px;
   width: 50px;
   margin: 0px 0px 2px 2px;
+  background: dodgerblue;
+  vertical-align: top;
+}
 
+.black {
+  background-color: black;
 }
 
 .scoreBox{
@@ -55,25 +60,30 @@ margin-top: 20px;
   width: 300px;
   margin-bottom: 30px;
   margin-top: 20px;
+  vertical-align: top;
 }
 
 .turn{
   height: 20px;
-  width: 40px;
+  width: 60px;
   display: inline-block;
+  vertical-align: top;
+  text-align: center;
 }
 
 .name{
   height: 20px;
-  width: 100px;
+  width: 130px;
   display: inline-block;
+  vertical-align: top;
 }
 
 .hits{
   height: 20px;
-  width: 60px;
+  width: 90px;
   display: inline-block;
   text-align: center;
+  vertical-align: top;
 }
 
 .boats{
@@ -81,19 +91,31 @@ margin-top: 20px;
   width: 60px;
   display: inline-block;
   text-align: center;
+  vertical-align: top;
 }
 
 
 .lfComm{
   float: right;
   width: 300px;
-  height: 350px;
+  height: 375px;
   margin-top: 30px;
 }
 
 .lfText{
-  width: 300px;
+  width: 280px;
   height: 300px;
+  padding: 10px;
+  display: inline-block;
+  white-space: pre-wrap;
+  line-height: 150%;
+}
+
+.inputBox{
+  width: 280px;
+  height: 300px;
+  padding: 10px;
+  display: none;
 }
 
 .lfButton{
@@ -101,4 +123,5 @@ margin-top: 20px;
   height: 50px;
   text-align: center;
   line-height: 50px;
+  font-weight: bold;
 }
