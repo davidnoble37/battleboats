@@ -259,6 +259,11 @@ function checkMatch(submit){
           miss = false
           // increase hit count by 1
           hitCount[currentPlayer] += 1
+          if(currentPlayer == "player1"){
+            $('#player1Hits').text(hitCount[currentPlayer] + "/9")
+          }else{
+            $('#player2Hits').text(hitCount[currentPlayer] + "/9")
+          }
 
           // check winner
 
@@ -275,7 +280,14 @@ function checkMatch(submit){
     $gameGrid.eq(submit[1] * 8 + submit[0]).css('background-color', 'green');
     console.log("miss!" + currentPlayer)
   }
-  if(!checkWinner()){
+  if(checkWinner()){
+    // winner notification
+    $sfComm.text(currentPlayer + " Wins!!")
+    $lfComm.text(currentPlayer + " Wins!!")
+
+    $button.text("Game Over")
+    $button.off('click', switchTurns)
+  }else{
     $button.text("Finish Turn")
     $button.on('click', switchTurns)
     console.log("post checkMatch" + currentPlayer)
@@ -316,15 +328,7 @@ function finishSwitch(){
 // check to see if hits count = total number of boat squares
 function checkWinner(){
   if(hitCount[currentPlayer] == 3){
-    // winner notification
-    $sfComm.text(currentPlayer + " Wins!!")
-    $lfComm.text(currentPlayer + " Wins!!")
-
-    $button.text("Game Over")
-    $button.off('click', switchTurns)
-
     return true
-
   }
 }
 
