@@ -166,7 +166,7 @@ function p2Pass(){
   }
 
   $sfComm.text("Pass laptop to Player 2")
-  $lfComm.text("It's Player 1's turn to place boats.\n\nPass laptop to Player 1 and shield screen to keep boat locations private.\n\nHit the button below when ready.")
+  $lfComm.text("It's Player 2's turn to place boats.\n\nPass laptop to Player 2 and shield screen to keep boat locations private.\n\nHit the button below when ready.")
 
   $button.text("Ready to Place Player 2's Boats!")
 
@@ -327,7 +327,7 @@ function finishSwitch(){
 
 // check to see if hits count = total number of boat squares
 function checkWinner(){
-  if(hitCount[currentPlayer] == 3){
+  if(hitCount[currentPlayer] == 9){
     return true
   }
 }
@@ -335,7 +335,7 @@ function checkWinner(){
 
 
 // Future Improvements
-// - scoreboard animation
+
 // - authenticate placement
 // - input names
 // - boat sink notifications
