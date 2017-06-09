@@ -15,6 +15,7 @@ header{
   height: 550px;
   width: 825px;
   margin: 20px;
+  border: 1px solid black;
 }
 
 
@@ -31,6 +32,7 @@ height: 500px;
 width: 500px;
 float: left;
 margin-top: 20px;
+border: none;
 }
 
 .gridWrapper{
@@ -38,6 +40,7 @@ margin-top: 20px;
   width: 480px;
   float: right;
   margin-top: 30px;
+  border: none;
 }
 
 .gridSquare{
@@ -61,6 +64,28 @@ margin-top: 20px;
   margin-bottom: 30px;
   margin-top: 20px;
   vertical-align: top;
+  border: none;
+}
+
+#sbHeaders{
+  border: none;
+  border-bottom: 2px solid black;
+  border-top: 1px solid black;
+}
+
+#p1Container{
+  border: none;
+  border-left: 1px solid black;
+}
+
+#p2Container{
+  border: none;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#headerTurn{
+  border-left: 1px solid black;
 }
 
 .turn{
@@ -69,6 +94,7 @@ margin-top: 20px;
   display: inline-block;
   vertical-align: top;
   text-align: center;
+  border: none;
 }
 
 .name{
@@ -76,6 +102,7 @@ margin-top: 20px;
   width: 130px;
   display: inline-block;
   vertical-align: top;
+  border: none;
 }
 
 .hits{
@@ -84,6 +111,7 @@ margin-top: 20px;
   display: inline-block;
   text-align: center;
   vertical-align: top;
+  border: none;
 }
 
 .boats{
@@ -92,6 +120,7 @@ margin-top: 20px;
   display: inline-block;
   text-align: center;
   vertical-align: top;
+  border: none;
 }
 
 
